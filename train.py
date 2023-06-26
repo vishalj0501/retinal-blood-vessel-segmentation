@@ -52,8 +52,7 @@ def train(model, trainloader, optimizer, loss, epochs):
         train_losses.append(train_loss)
         train_dices.append(train_dice)
         
-        #Validation
-        model.eval()
+        model.eval() #Validation
         val_loss = 0
         val_dice = 0
         with torch.no_grad():

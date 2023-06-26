@@ -84,10 +84,3 @@ class Unet(nn.Module):
         x = self.outc(x)
         return x
     
-# if __name__ == '__main__':
-#     x = torch.randn(1, 3, 256, 256)
-#     model = Unet(3, 1)
-#     # model= InConv(3, 64)
-#     # model = Down(64, 128)
-#     y = model(x)
-#     print(y.shape)
